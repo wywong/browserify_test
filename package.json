@@ -15,7 +15,7 @@
     "vinyl-source-stream": "^1.0.0"
   },
   "browser": {
-    "angular": "./node_modules/angular/angular.js",
+    "ng": "./node_modules/angular/angular.js",
     "angular-resource": "./node_modules/angular-resource/angular-resource.js"
   },
   "browserify": {
@@ -24,9 +24,14 @@
     ]
   },
   "browserify-shim": {
-    "angular": {
+    "ng": {
       "exports": "angular"
+    },
+    "angular-resource": {
+        "exports": null,
+        "depends": [
+            "angular"
+        ]
     }
-
   }
 }

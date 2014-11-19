@@ -1,7 +1,7 @@
 var ng = require('angular'),
+    resource = require("angular-resource"),
     _ = require('lodash');
 
-require("angular-resource");
 
 
 ng.module('Test App', []);
